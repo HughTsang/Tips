@@ -7,24 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC13C2701D62E24700CEB71F /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC13C26F1D62E24700CEB71F /* HomeVC.m */; };
 		EC8720BA1D61C0BF00308F5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC8720B91D61C0BF00308F5C /* main.m */; };
 		EC8720BD1D61C0BF00308F5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC8720BC1D61C0BF00308F5C /* AppDelegate.m */; };
-		EC8720C01D61C0BF00308F5C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC8720BF1D61C0BF00308F5C /* ViewController.m */; };
-		EC8720C31D61C0BF00308F5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8720C11D61C0BF00308F5C /* Main.storyboard */; };
 		EC8720C51D61C0BF00308F5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC8720C41D61C0BF00308F5C /* Assets.xcassets */; };
 		EC8720C81D61C0BF00308F5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8720C61D61C0BF00308F5C /* LaunchScreen.storyboard */; };
 		ECDB73101D62BB2800A027B1 /* GlobalConst.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDB730F1D62BB2800A027B1 /* GlobalConst.m */; };
 		ECDB73141D62BB9600A027B1 /* NSMutableArray+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDB73131D62BB9600A027B1 /* NSMutableArray+Extension.m */; };
+		ECDB73171D62D7B800A027B1 /* NSMutableDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDB73161D62D7B800A027B1 /* NSMutableDictionary+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC13C26E1D62E24700CEB71F /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		EC13C26F1D62E24700CEB71F /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
 		EC8720B51D61C0BF00308F5C /* Tips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8720B91D61C0BF00308F5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC8720BB1D61C0BF00308F5C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EC8720BC1D61C0BF00308F5C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EC8720BE1D61C0BF00308F5C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EC8720BF1D61C0BF00308F5C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		EC8720C21D61C0BF00308F5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC8720C41D61C0BF00308F5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC8720C71D61C0BF00308F5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC8720C91D61C0BF00308F5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +34,8 @@
 		ECDB73111D62BB3600A027B1 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		ECDB73121D62BB9600A027B1 /* NSMutableArray+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Extension.h"; sourceTree = "<group>"; };
 		ECDB73131D62BB9600A027B1 /* NSMutableArray+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Extension.m"; sourceTree = "<group>"; };
+		ECDB73151D62D7B800A027B1 /* NSMutableDictionary+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Extension.h"; sourceTree = "<group>"; };
+		ECDB73161D62D7B800A027B1 /* NSMutableDictionary+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +49,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC13C26A1D62E1E200CEB71F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EC13C26D1D62E1E200CEB71F /* ViewController */,
+				EC13C26B1D62E1E200CEB71F /* Model */,
+				EC13C26C1D62E1E200CEB71F /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EC13C26B1D62E1E200CEB71F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC13C26C1D62E1E200CEB71F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC13C26D1D62E1E200CEB71F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EC13C26E1D62E24700CEB71F /* HomeVC.h */,
+				EC13C26F1D62E24700CEB71F /* HomeVC.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		EC8720AC1D61C0BF00308F5C = {
 			isa = PBXGroup;
 			children = (
@@ -70,9 +104,6 @@
 				ECDB72F81D62BA3500A027B1 /* Classes */,
 				EC8720BB1D61C0BF00308F5C /* AppDelegate.h */,
 				EC8720BC1D61C0BF00308F5C /* AppDelegate.m */,
-				EC8720BE1D61C0BF00308F5C /* ViewController.h */,
-				EC8720BF1D61C0BF00308F5C /* ViewController.m */,
-				EC8720C11D61C0BF00308F5C /* Main.storyboard */,
 				EC8720C41D61C0BF00308F5C /* Assets.xcassets */,
 				EC8720C61D61C0BF00308F5C /* LaunchScreen.storyboard */,
 				EC8720C91D61C0BF00308F5C /* Info.plist */,
@@ -93,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				ECDB72F91D62BA3500A027B1 /* Main */,
+				EC13C26A1D62E1E200CEB71F /* Home */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -115,6 +147,8 @@
 			children = (
 				ECDB73121D62BB9600A027B1 /* NSMutableArray+Extension.h */,
 				ECDB73131D62BB9600A027B1 /* NSMutableArray+Extension.m */,
+				ECDB73151D62D7B800A027B1 /* NSMutableDictionary+Extension.h */,
+				ECDB73161D62D7B800A027B1 /* NSMutableDictionary+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -218,7 +252,6 @@
 			files = (
 				EC8720C81D61C0BF00308F5C /* LaunchScreen.storyboard in Resources */,
 				EC8720C51D61C0BF00308F5C /* Assets.xcassets in Resources */,
-				EC8720C31D61C0BF00308F5C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,8 +263,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECDB73101D62BB2800A027B1 /* GlobalConst.m in Sources */,
-				EC8720C01D61C0BF00308F5C /* ViewController.m in Sources */,
 				EC8720BD1D61C0BF00308F5C /* AppDelegate.m in Sources */,
+				EC13C2701D62E24700CEB71F /* HomeVC.m in Sources */,
+				ECDB73171D62D7B800A027B1 /* NSMutableDictionary+Extension.m in Sources */,
 				EC8720BA1D61C0BF00308F5C /* main.m in Sources */,
 				ECDB73141D62BB9600A027B1 /* NSMutableArray+Extension.m in Sources */,
 			);
@@ -240,14 +274,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EC8720C11D61C0BF00308F5C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC8720C21D61C0BF00308F5C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EC8720C61D61C0BF00308F5C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -24,15 +24,15 @@
     method_exchangeImplementations(original, new);
 }
 
-- (NSString *)descriptionWithLocale:(id)locale{
-    
-    NSMutableString *strM = [NSMutableString stringWithFormat:@"Count:%lu (\n", (unsigned long)self.count];
-    for (id object in self) {
-        [strM appendFormat:@"\t %@,\n", object];
-    }
-    [strM appendString:@")"];
-    return strM;
-}
+//- (NSString *)descriptionWithLocale:(id)locale{
+//    
+//    NSMutableString *strM = [NSMutableString stringWithFormat:@"Count:%lu (\n", (unsigned long)self.count];
+//    for (id object in self) {
+//        [strM appendFormat:@"\t %@,\n", object];
+//    }
+//    [strM appendString:@")"];
+//    return strM;
+//}
 
 - (void)hz_addObject:(id)anObject{
     
