@@ -17,6 +17,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+//    self.view.backgroundColor = [UIColor cyanColor];
+//    
+//    NSMutableArray *arr = @[].mutableCopy;
+//    
+//    NSString *str = nil;
+//    [arr addObject:@"123"];
+//    [arr addObject:str];
+//    [arr addObject:@"!@#"];
+//    
+//    NSLog(@"%@", arr);
+//    
+//    NSLog(@"%@", arr[12]);
 }
 
 @end
