@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EC13C2701D62E24700CEB71F /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC13C26F1D62E24700CEB71F /* HomeVC.m */; };
+		EC13C2731D62E6B900CEB71F /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EC13C2721D62E6B900CEB71F /* UIColor+Extension.m */; };
 		EC8720BA1D61C0BF00308F5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC8720B91D61C0BF00308F5C /* main.m */; };
 		EC8720BD1D61C0BF00308F5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC8720BC1D61C0BF00308F5C /* AppDelegate.m */; };
 		EC8720C51D61C0BF00308F5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC8720C41D61C0BF00308F5C /* Assets.xcassets */; };
@@ -20,6 +21,8 @@
 /* Begin PBXFileReference section */
 		EC13C26E1D62E24700CEB71F /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
 		EC13C26F1D62E24700CEB71F /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		EC13C2711D62E6B900CEB71F /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		EC13C2721D62E6B900CEB71F /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
 		EC8720B51D61C0BF00308F5C /* Tips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8720B91D61C0BF00308F5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC8720BB1D61C0BF00308F5C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -149,6 +152,8 @@
 				ECDB73131D62BB9600A027B1 /* NSMutableArray+Extension.m */,
 				ECDB73151D62D7B800A027B1 /* NSMutableDictionary+Extension.h */,
 				ECDB73161D62D7B800A027B1 /* NSMutableDictionary+Extension.m */,
+				EC13C2711D62E6B900CEB71F /* UIColor+Extension.h */,
+				EC13C2721D62E6B900CEB71F /* UIColor+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -265,6 +270,7 @@
 				ECDB73101D62BB2800A027B1 /* GlobalConst.m in Sources */,
 				EC8720BD1D61C0BF00308F5C /* AppDelegate.m in Sources */,
 				EC13C2701D62E24700CEB71F /* HomeVC.m in Sources */,
+				EC13C2731D62E6B900CEB71F /* UIColor+Extension.m in Sources */,
 				ECDB73171D62D7B800A027B1 /* NSMutableDictionary+Extension.m in Sources */,
 				EC8720BA1D61C0BF00308F5C /* main.m in Sources */,
 				ECDB73141D62BB9600A027B1 /* NSMutableArray+Extension.m in Sources */,
