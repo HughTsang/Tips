@@ -9,6 +9,9 @@
 #import "HomeVC.h"
 
 static NSString * const ReusedID = @"ReusedID";
+static NSString * const TitleKey = @"title";
+static NSString * const SubTitleKey = @"subTitle";
+static NSString * const ImageKey = @"image";
 
 @interface HomeVC () <UITableViewDelegate, UITableViewDataSource>
 
@@ -31,12 +34,12 @@ static NSString * const ReusedID = @"ReusedID";
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    NSArray *array = @[@"类型1",
-                       @"类型2",
-                       @"类型3",
-                       @"类型4",
-                       @"类型5",
-                       @"类型6",];
+    NSArray *array = @[@{TitleKey : @"类型1", SubTitleKey : @"<-----副标题---->", ImageKey : @"icon_crown",},
+                       @{TitleKey : @"类型2", SubTitleKey : @"<-----副标题---->", ImageKey : @"icon_crown",},
+                       @{TitleKey : @"类型3", SubTitleKey : @"<-----副标题---->", ImageKey : @"icon_crown",},
+                       @{TitleKey : @"类型4", SubTitleKey : @"<-----副标题---->", ImageKey : @"icon_crown",},
+                       @{TitleKey : @"类型5", SubTitleKey : @"<-----副标题---->", ImageKey : @"icon_crown",},
+                       @{TitleKey : @"类型6", SubTitleKey : @"<-----副标题---->", ImageKey : @"icon_crown",},];
     [self.listArray addObjectsFromArray:array];
     [self.table reloadData];
 }
@@ -47,15 +50,31 @@ static NSString * const ReusedID = @"ReusedID";
     return self.listArray.count;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return 80;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    
+    return 20;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ReusedID];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ReusedID];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ReusedID];
     }
     
-    cell.textLabel.text = self.listArray[indexPath.row];
+    cell.textLabel.textColor = [UIColor cSandyOrangeColor];
+    cell.detailTextLabel.textColor = [UIColor cDeepSkyBlueColor];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    
+    NSDictionary *dict = self.listArray[indexPath.row];
+    
+    cell.textLabel.text = [dict objectForKey:TitleKey];;
+    cell.detailTextLabel.text = dict[SubTitleKey];
+    cell.imageView.image = [UIImage imageNamed:dict[ImageKey]];
     
     return cell;
 }
@@ -71,10 +90,10 @@ static NSString * const ReusedID = @"ReusedID";
 - (UITableView *)table{
     
     return Lazy(_table, ({
-        UITableView *table = [[UITableView alloc] initWithFrame:CGRectMake(0, 20, SCREEN_WIDTH, SCREEN_HEIGHT - 20) style:UITableViewStylePlain];
+        UITableView *table = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - 0) style:UITableViewStyleGrouped];
         table.delegate = self;
         table.dataSource = self;
-        table.alwaysBounceVertical = YES;
+        table.backgroundColor = [UIColor cGray_6];
         table.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
         [self.view addSubview:table];
         table;
